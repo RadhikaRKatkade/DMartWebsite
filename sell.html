@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>DSell</title>
+</head>
+<style>
+    .dropbtn {
+        background-color: #0b43aa;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: #1045b8;
+</style>
+<body>
+    <div class="fixed w-full">
+        <nav class="flex justify-between bg-blue-900 text-white px-3 py-2">
+            <img src="img1.png" class="h-10 pt-2 px-2 rounded-2x" alt="">
+            <ul class="justify-end flex space-x-9">
+                <li>
+                    <div class="search-box flex mr-14 mt-1 ">
+                        <input type="text" class="tbox px-3 py-3 border border-1 border-gray-900 
+rounded-sm"
+                            placeholder="search..">
+                        <button
+                            class="mx-0 bg-teal-500 text-white px-2 py-2 hover:bg-teal-700 accent-
+teal-600 active:bg-teal-500 active:text-black rounded-lg">Search</button>
+<button class="bg-white text-blue-900 justify-between hover:underline mx-3 rounded-lg px-1 py-1">Get Best Price</button>
+                    </div>
+                </li>
+                <li class="mt-4 cursor-pointer"><a href="shopping.html">Shopping</a></li>
+                <li class="mt-4 cursor-pointer"><a href="sell.html">Sell</a></li>
+                <li class="mt-4 cursor-pointer"><a href="Help.html">Help</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Log In</button>
+                        <div class="dropdown-content -mx-32">
+                            <a href="#">Log In</a>
+<a href="#">Post Your Requirement</a>
+<a href="#">Verified Business Buyer</a>
+<a href="#">Product/Service/Directory</a>
+<a href="#">Recent Activity</a>
+<a href="#">Manage Requirement</a>
+<a href="#">Setting</a>
+                        </div>
+                      </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+<main>
+    <div class="grid gap-x-25 gap-y-4 grid-cols-3">
+        <div>
+            <img class="mx-6 my-6 mt-24" src="man.png" alt="">
+        </div>
+
+        <div class="mt-8">
+            <h1 class="text-lg text-blue-900 font-semibold">Sell for free on India’s largest online B2B marketplace</h1>
+            <div class="grid gap-x-3 gap-y-2 grid-cols-3 mt-7">
+                <div>
+                    <img  src="buyer (1).png" alt="">
+                    <img src="gyb.png" alt="">
+                    <h1 class="text-lg font-semibold text-black">15 crore+</h1>
+                    <p class="mx-2 text-gray-600">Buyers</p>
+                </div>
+                <div>
+                    <img class="w-25 h-25" src="supplier.png" alt="">
+                    <img src="zc.png" alt="">
+                    <h1 class="text-lg font-semibold text-black">72 lakh+</h1>
+                    <p class="mx-2 text-gray-600">Suppliers</p>
+                </div>
+                <div>
+                    <img src="prodnserv.png" alt="">
+                    <img src="mybb.png" alt="">
+                    <h1 class="text-lg font-semibold text-black">8 crore+</h1>
+                    <p class="mx-1 text-gray-600">Products & Services</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class=" mx-20 mt-24 w-fit bg-slate-100">
+            <h1 class="mx-5 text-xl text-gray-800 font-semibold mt-3">Free Registration/Sign In</h1>
+<form action="/action_page.php">
+  <input class="mx-5 mt-6 px-10 py-3 rounded-lg" type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+</form>
+<button class="mx-5 mt-1 px-20 py-3 rounded-lg bg-teal-600 text-white">Start Selling &#8594;</button>
+        </div>
+
+        <div class="mx-2 rounded-xl">
+            <h1 class="text-2xl font-semibold text-gray-800 mx-5 mt-0">Sell on DMart</h1>
+            <div class="grid gap-y-8 grid-cols-2 grid-rows-2 bg-slate-100 rounded-lg mt-3 ">
+<div>
+    <img class="w-12 h-12 mx-5" src="gyb.png" alt="">
+</div>
+<div>
+    <h1 class="-mx-24 text-blue-700 font-semibold">Grow your Business</h1>
+    <h2 class="-mx-24">Sell to buyers anytime, anywhere</h2>
+</div>
+
+<div>
+    <img class="w-12 h-12 mx-5" src="zc.png" alt="">
+</div>
+<div>
+    <h1 class="-mx-24 text-blue-700 font-semibold">Zero Cost</h1>
+    <h2 class="-mx-24">No commission or transaction fee</h2>
+</div>
+<div>
+    <img src="prodnserv.png" alt="">
+</div>
+<div>
+    <h1 class="-mx-24 text-blue-700 font-semibold">Manage your Business Better</h1>
+    <h2 class="-mx-24">Lead Management System & other features</h2>
+</div>
+            </div>
+        </div>
+
+        <div class="mx-8">
+            <h1 class="text-2xl text-gray-800 font-semibold font-sans mb-2 mr-5">Get a free listing in 3 simple steps:</h1>
+            <div class="grid grid-cols-3 grid-rows-1 gap-x-1">
+
+                <div class="w-48 bg-slate-100">
+                    <img src="gyb.png" alt="">
+                    <h1 class="text-blue-900 items-center text-lg mt-1">Create Account</h1>
+                    <p>Add your name and phone number to get started</p>
+                </div>
+                <div class="mx-20 bg-slate-100 w-52">
+                    <img src="zc.png" alt="">
+                    <h1 class="text-blue-900 items-center text-lg mt-1">Add Business</h1>
+                    <p>Add name, address & e-mail of your company, store/ business.</p>
+                </div>
+                <div class="mx-44 bg-slate-100 w-52">
+                    <img src="prodnserv.png" alt="">
+                    <h1 class="text-blue-900 items-center text-lg mt-1">Add Products/ Services</h1>
+                    <p>Minimum 3 products/ services needed for your free listing page.</p>
+                </div>
+            </div>
+      </div>
+      </div>
+</main>
+<footer class="text-black body-font bg-transparent bg-purple-500 background-image">
+    <div class="container px-5 py-24 mx-auto ">
+      <p class="text-2xl mb-2 text-blue-900 font-serif mt-0  justify-center items-center pb-8 py-2 
+px-3 bg-purple-200"> We are here to help you</p>
+      <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <nav class="list-none mb-6">
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">About 
+Us</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Join 
+Sales</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Sucesses 
+Stories</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Press 
+Section</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer 
+hover:underline">Advertise with us</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4 mx-6">
+          <nav class="list-none mb-6">
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Help</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Feedback</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Complaints</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Customer 
+Care</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Job & 
+Career</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Contact 
+Us</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4 mx-6">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">Suppliers ToolKit</h2>
+          <nav class="list-none mb-6">
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Sell On 
+DMart</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Latest 
+BuyLead</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Learning 
+Centre</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Ship 
+With DMart</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4 mx-6">
+          <h2 class="title-font font-medium text-gary-900 tracking-widest text-sm mb-3">BUYERS 
+TOOLKIT</h2>
+          <nav class="list-none mb-10">
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Post 
+Requirement</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Product 
+You Buy</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Search 
+Product & Suppliers</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">Pay with 
+DMart</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4 mx-6">
+          <h2 class="title-font font-medium text-blue-900 tracking-widest text-sm mb-3">Accounting 
+Solutions</h2>
+          <nav class="list-none mb-10">
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer 
+hover:underline">Accounting Softwares</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-gray-800 cursor-pointer hover:underline">Tally on 
+Mobile</a>
+            </li>
+            <li class="hover:underline hover:text-blue-900">
+              <a class="text-gray-600 hover:text-blue-800 cursor-pointer hover:underline">GST e-
+Invoice</a>
+            </li>
+          </nav>
+        </div>
+    </div>
+    <div class="border-t border-gray-200">
+      <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+        <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+          <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+          </div>
+          <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">
+            <br class="lg:block hidden">
+          </p>
+        </div>
+        <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start 
+md:w-auto">
+          <a class="text-gray-500">
+            <svg fill="blue" stroke-linecap="round" stroke-linejoin="round" stroke-
+width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="#87CEEB" stroke-linecap="round" stroke-linejoin="round" stroke-
+width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 
+4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="#D16587" stroke="white" stroke-linecap="round" stroke-linejoin="round" 
+stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+
+          <a class="ml-3 text-gray-500">
+            <svg fill="blue" stroke="currentColor" stroke-linecap="round" stroke-
+linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 
+6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-3 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 DMart — All rights Reserved
+        </p>
+        <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-
+500 text-sm"> DMart Nashik 422003 </span>
+      </div>
+    </div>
+  </footer>
+</div>
+</div>
+<hr>
+</body>
+</html>

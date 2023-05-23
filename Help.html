@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Help</title>
+</head>
+<style>
+    *body {
+        margin: 0;
+        padding: 0;
+    }
+    .open-button {
+        background-color: #52c5c9;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 23px;
+        right: 28px;
+        width: 280px;
+      }
+      
+      /* The popup chat - hidden by default */
+      .chat-popup {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+      }
+      
+      /* Add styles to the form container */
+      .form-container {
+        max-width: 300px;
+        padding: 10px;
+        background-color: white;
+      }
+      
+      /* Full-width textarea */
+      .form-container textarea {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+        resize: none;
+        min-height: 200px;
+      }
+      
+      /* When the textarea gets focus, do something */
+      .form-container textarea:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      
+      /* Set a style for the submit/send button */
+      .form-container .btn {
+        background-color: #0a26a1;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:10px;
+        opacity: 0.8;
+      }
+      
+      /* Add a red background color to the cancel button */
+      .form-container .cancel {
+        background-color: turquoise;
+      }
+      
+      /* Add some hover effects to buttons */
+      .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+      }
+      .dropbtn {
+        background-color: #0b1492;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: #061b8f;}
+</style>
+</style>
+
+<body class="bg-gray-200">
+    <main>
+
+        <nav class="flex justify-between bg-blue-900 text-white px-3 py-2 w-full bg-fixed">
+            <img src="img1.png" class="h-10 pt-2 px-2 rounded-2x" alt="">
+            <ul class="justify-end flex space-x-9">
+                <li>
+                    <div class="search-box flex mr-14 mt-1 ">
+                        <input type="text" class="tbox px-3 py-3 border border-1 border-gray-900 
+rounded-sm" placeholder="search..">
+                        <button class="mx-0 bg-teal-500 text-white px-2 py-2 hover:bg-teal-700 accent-
+teal-600 active:bg-teal-500 active:text-black rounded-lg">Search</button>
+                        <button
+                            class="bg-white text-blue-900 justify-between hover:underline mx-3 rounded-lg px-1 py-1">Get
+                            Best Price</button>
+                    </div>
+                </li>
+                <li class="mt-4 cursor-pointer"><a href="shopping.html">Shopping</a></li>
+                <li class="mt-4 cursor-pointer"><a href="sell.html">Sell</a></li>
+                <li class="mt-4 cursor-pointer"><a href="Help.html">Help</a></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn">Log In</button>
+                    <div class="dropdown-content -mx-32">
+                      <a href="#">Home</a>
+                      <a href="#">Post Your Requirement</a>
+                      <a href="#">Verified Business Buyer</a>
+                      <a href="#">Product/Service/Directory</a>
+                      <a href="#">Recent Activity</a>
+                      <a href="#">Manage Requirement</a>
+                      <a href="#">Setting</a>
+                    </div>
+                  </div></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div class="grid grid-cols-3 grid-row-1 gap-x-36 gap-y-2 items-center justify-between text-center mt-12 mx-40">
+
+            <div class="bg-blue-200 py-4 px-4 ">
+                <img class="h-14 block" src="light-bulb.png" alt="">
+                <div class="grid grid-cols-1 grid-rows-2 flex float-right -mt-12">
+                    <h1>I'm a Buyer</h1>
+                    <p class="text-gray-800 mt-1">90 Articles/4 Categories</p>
+
+                </div>
+            </div>
+
+            <div class="bg-blue-200 px-4 py-4">
+                <img class="h-14" src="light-bulb.png" alt="">
+                <div class="grid grid-cols-1 grid-rows-2 flex float-right -mt-12">
+                    <h1>I'm a Seller</h1>
+                    <p class="text-gray-800 mt-1">318 Articles/8 Categories</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-200 px-4 py-4">
+                <img class="h-14" src="light-bulb.png" alt="">
+                <div class="grid grid-cols-1 grid-rows-2 flex float-right -mt-12">
+                    <h1>Product Update</h1>
+                    <p class="text-gray-800 mt-1">14 Articles/6 Categories</p>
+                </div>
+            </div>
+
+        </div>
+   
+    </main>
+    <section class="bg-white">
+        <div class="grid grid-cols-3 grid-rows-8 items-start text-start mt-5 gap-y-2 gap-x-1">
+            <div class="mx-36">Buyer Knowledge Base</div>
+            <div class="mx-36">Seller Knowledge Base</div>
+            <div class="mx-36">Announcements</div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">Where do I log complaints and trade disputes?</h1>
+
+            </div>
+
+            <div class="grid grid-cols-2 ">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">How to create free seller account on DMart</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">Where do I log complaints and trade disputes?</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">DMart Bug Bounty Program</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">what security measures does DMart take?</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">How do I register for paid services on DMart</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">Careers in DMart</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">How to view/delete the buy requirement posted by me?</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">How do I add product in mu DMart catalog</h1>
+            </div>
+
+            <div class="grid grid-cols-2"> 
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">How do I swap my primmary email ID with secondary email ID</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">How does a buyer provide feedback/rating to a seller listed on DMart</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">What is Customer care number of DMart</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">How do I post buying requirement</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">Mini dynamic catalog(MDC) service</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">how do I Add produc in my DMart catalog</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">TrustSEAL services</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">Star Service</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">Where do I log complaints and trade disputes?</h1>
+            </div>
+
+            <div class="grid grid-cols-2">
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">Integration of DMart lead manager CRM API with third party  CRMs</h1>
+            </div>
+
+            <div class="grid grid-cols-2"> 
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">How do I update my alternate/secondary email ID</h1>
+            </div>
+
+            <div class="grid grid-cols-2"> 
+                <img class="h-6 mx-24" src="page.png" alt="">
+                <h1 class="-mx-28 hover:underline cursor-pointer">How do I update my primary email id</h1>
+            </div>
+
+        </div>
+    </section>
+    <section class="bg-gray-500">
+
+    </section>
+    <div class="grid grid-cols-3 gap-x-8 items-center text-center mt-12">
+        <div>
+            <div class="grid grid-rows-8 gap-y-1 text-gray-600 text-sm cursor-pointer">
+                <div class="cursor-pointer hover:underline">About Us</div>
+                <div class="cursor-pointer hover:underline">Join Sale</div>
+                <div class="cursor-pointer hover:underline">Help</div>
+                <div class="cursor-pointer hover:underline">Feedback</div>
+                <div class="cursor-pointer hover:underline">Complaints</div>
+                <div class="cursor-pointer hover:underline">Contact us</div>
+                <div class="cursor-pointer hover:underline">Customer care</div>
+                <div class="cursor-pointer hover:underline">Security tips for buyers</div>
+
+            </div>
+        </div>
+
+
+        <div class="grid grid-rows-8 gap-y-1 text-gray-600 text-sm cursor-pointer">
+            <div class="cursor-pointer hover:underline">sell on DMart</div>
+            <div class="cursor-pointer hover:underline">Learning centre</div>
+            <div class="cursor-pointer hover:underline">enterprise solution</div>
+            <div class="cursor-pointer hover:underline">success stories</div>
+            <div class="cursor-pointer hover:underline">press section</div>
+            <div class="cursor-pointer hover:underline">advertise with us</div>
+            <div class="cursor-pointer hover:underline">security tips for sellers</div>
+        </div>
+        <div class="grid grid-3">
+            <div class="grid grid-cols-2">
+                <div class="bg-blue-900 text-white px-2 py-2 rounded-lg">+91 7498718604</div>
+                <div><img class="h-12" src="WA.jpg" alt=""></div>
+            </div>
+            <div class="grid grid-cols-2 mt-2 w-fit">
+                <div class="bg-blue-900 text-white px-2 py-1 rounded-lg w-max">Email ID:-DMart@gmail.com</div>
+                <div></div>
+
+            </div>
+            <div class="grid grid-cols-2 mt-2">
+                <div class="bg-blue-900 text-white px-2 py-2 rounded-lg">+91 749 342 113</div>
+                <div></div>
+            </div>
+
+    </div>
+
+<section>
+</section>
+<section>
+    <button class="open-button rounded-full" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</section>
+</body>
+</html>
